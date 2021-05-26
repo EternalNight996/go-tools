@@ -46,8 +46,7 @@ func (list *SingleList) Append(node *SingleNode) bool {
 		return true
 	}
 
-	tail := list.TAIL
-	tail.NEXT = node
+	list.TAIL.NEXT = node
 	list.TAIL = node
 	list.Length += 1
 	return true
